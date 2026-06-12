@@ -13,8 +13,10 @@ const START_DATE = new Date('2025-06-12T00:00:00');
 const PHOTOS = [
   { src: 'fotos/05e4e2d2-94c0-4e69-b1b1-7dfd4304b180.jfif', caption: '' },
   { src: 'fotos/1b4a2dcd-f334-4dfe-a437-27bc25b3b85c.jfif', caption: '' },
+  { src: 'fotos/3820c2cf-f865-4609-902a-ca3033acd8dc.jfif', caption: '' },
   { src: 'fotos/384f61df-73e9-423a-b270-7abfa354a140.jfif', caption: '' },
   { src: 'fotos/61ccc31e-eb2b-4971-a37b-7b27299e8206.jfif', caption: '' },
+  { src: 'fotos/6ba4bc2e-86c9-4593-8d68-7313da1a3455.jfif', caption: '' },
   { src: 'fotos/7c58b9cb-1551-4153-9475-76bd90d65e77.jfif', caption: '' },
   { src: 'fotos/8b32e18f-e8cc-4b40-b664-46bc46209da3.jfif', caption: '' },
   { src: 'fotos/90191c41-4d21-4ada-a791-46b98aff6563.jfif', caption: '' },
