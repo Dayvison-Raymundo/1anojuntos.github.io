@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1 Ano Juntos ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ TELA DE SENHA ══ -->
+  <div class="lock-screen" id="lockScreen">
+    <div class="lock-petals" id="lockPetals"></div>
+    <div class="lock-box">
+      <div class="lock-icon" id="lockIcon">🔒</div>
+      <h2 class="lock-title">Apenas uma pessoa<br/>especial pode entrar</h2>
+      <p class="lock-hint">Digite a data em que tudo começou</p>
+      <div class="lock-input-wrap">
+        <input
+          type="text"
+          id="passwordInput"
+          class="lock-input"
+          placeholder="ex: 12/06/2025"
+          maxlength="10"
+          autocomplete="off"
+        />
+        <button class="lock-btn" id="lockBtn">→</button>
+      </div>
+      <p class="lock-error" id="lockError"></p>
+    </div>
+  </div>
+
+  <!-- ══ CONTEÚDO PRINCIPAL (oculto até a senha) ══ -->
+  <div class="main-content hidden" id="mainContent">
+
+    <!-- Pétalas -->
+    <div class="petals" id="petals"></div>
+
+    <!-- Música -->
+    <audio id="bgMusic" loop>
+      <source src="music/Ed Sheeran - Perfect Duet (with Beyoncé) [Official Audio].mp3" type="audio/mpeg" />
+    </audio>
+    <div class="music-wrap">
+      <div class="volume-wrap">
+        <span>🔊</span>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.5" />
+        <span>🔇</span>
+      </div>
+      <button class="music-btn" id="musicBtn" title="Tocar/Pausar música">♪</button>
+    </div>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="subtitle">12 de junho de 2025 — 12 de junho de 2026</p>
+        <h1>1 Ano <span>Juntos</span></h1>
+        <p class="tagline">Um ano inteiro ao seu lado, voce e uma pessoa especial pra mim, e eu quero te mostrar o quanto</p>
+        <div class="counter" id="counter">
+          <div class="counter-item"><span id="days">365</span><small>dias</small></div>
+          <div class="counter-item"><span id="hours">00</span><small>horas</small></div>
+          <div class="counter-item"><span id="minutes">00</span><small>minutos</small></div>
+          <div class="counter-item"><span id="seconds">00</span><small>segundos</small></div>
+        </div>
+      </div>
+      <div class="scroll-hint">↓</div>
+    </section>
+
+    <!-- ── Carta ── -->
+    <section class="letter-section">
+      <div class="letter reveal">
+        <h2>Para você</h2>
+        <p>Meu amor,</p>
+        <p>
+          Um ano atras, quando o Arthur me mandou dizendo que voce poderia ter gostado de mim, eu fiquei muito nervoso, 
+          porque na minha cabeca nao fazia sentido alguem tao linda como você querer sair comigo, quando nos saimos pela primeira vez,
+          sei que nao pareceu, mas eu estava muito, muito nervoso, porque eu ja gostava de voce, antes mesmo da gente sair a primeira vez, 
+          e depois do nosso primeiro encontro, eu fiquei e ainda sou totalmente apaixonado por você, aquele dia foi muito especial pra mim, 
+          e eu fiquei muito, muito feliz nesse dia, eu percebi que algo mudou em mim a partir daquele dia, e foi você que mudou em mim, depois
+          desse dia, eu so consegui pensar em você, eu contava as horas pra te ver e ficava muito ansioso sempre que eu iria te ver, e eu posso te dizer que,
+          mesmo depois de um ano, eu ainda me sinto assim, eu ainda fico ansioso pra te ver, meu amor eu te amo.
+        </p>
+        <p>
+          Oq eu quero dizer amor, e que desde o comeco, eu sabia que com voce seria diferente,
+          que nos construiriamos algo juntos, e amor eu lembro que voce havia me dito que o amor e uma escolha, e durante todo esse tempo, eu te escolhi todos os dias,
+          e vou continuar te escolhendo, pelo resto da minha vida.
+
+        </p>
+        <p>
+          Você é a melhor parte dos meus dias. Feliz 1 ano, meu amor.
+        </p>
+        <p class="signature">Com todo o meu amor ❤️</p>
+      </div>
+    </section>
+
+    <!-- ── Mural de Fotos ── -->
+    <section class="mural-section reveal">
+      <h2 class="mural-title">Nossa história</h2>
+      <p class="mural-subtitle">Clique em qualquer foto para ver maior ✦</p>
+
+      <div class="mural" id="mural">
+        <!-- Gerado pelo JS -->
+      </div>
+
+      <p class="photos-hint" id="photosHint">
+        Adicione suas fotos no array <strong>PHOTOS</strong> em <strong>script.js</strong> ✦
+      </p>
+    </section>
+
+    <!-- ── Rodapé ── -->
+    <footer>
+      <p>Feito com muito amor ❤️ — 12/06/2026</p>
+    </footer>
+
+  </div><!-- /main-content -->
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+    <div class="lb-inner">
+      <img src="" alt="" id="lbImg" />
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+    <button class="lb-nav lb-next" id="lbNext">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
