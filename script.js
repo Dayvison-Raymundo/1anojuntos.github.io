@@ -11,20 +11,20 @@ const START_DATE = new Date('2025-06-12T00:00:00');
 // Adicione suas fotos aqui:
 // { src: 'fotos/foto1.jpg', caption: 'Descrição opcional' }
 const PHOTOS = [
-  { src: 'fotos/05e4e2d2-94c0-4e69-b1b1-7dfd4304b180.jfif', caption: '' },
-  { src: 'fotos/1b4a2dcd-f334-4dfe-a437-27bc25b3b85c.jfif', caption: '' },
-  { src: 'fotos/3820c2cf-f865-4609-902a-ca3033acd8dc.jfif', caption: '' },
-  { src: 'fotos/384f61df-73e9-423a-b270-7abfa354a140.jfif', caption: '' },
-  { src: 'fotos/61ccc31e-eb2b-4971-a37b-7b27299e8206.jfif', caption: '' },
-  { src: 'fotos/6ba4bc2e-86c9-4593-8d68-7313da1a3455.jfif', caption: '' },
-  { src: 'fotos/7c58b9cb-1551-4153-9475-76bd90d65e77.jfif', caption: '' },
-  { src: 'fotos/8b32e18f-e8cc-4b40-b664-46bc46209da3.jfif', caption: '' },
-  { src: 'fotos/90191c41-4d21-4ada-a791-46b98aff6563.jfif', caption: '' },
-  { src: 'fotos/a10ecb6c-c396-4421-935f-5732bbc156d7.jfif', caption: '' },
-  { src: 'fotos/b8759d17-d565-427e-9142-2a3222146bf9.jfif', caption: '' },
-  { src: 'fotos/d778335b-c772-4476-b896-3f5fc99e9a3c.jfif', caption: '' },
-  { src: 'fotos/d8a57051-96bd-4933-9f0f-350db0945d3c.jfif', caption: '' },
-  { src: 'fotos/f61c400a-d6a4-4cc8-8bd3-759c74cdd3c9.jfif', caption: '' },
+  { src: 'fotos/05e4e2d2-94c0-4e69-b1b1-7dfd4304b180.jpg', caption: '' },
+  { src: 'fotos/1b4a2dcd-f334-4dfe-a437-27bc25b3b85c.jpg', caption: '' },
+  { src: 'fotos/3820c2cf-f865-4609-902a-ca3033acd8dc.jpg', caption: '' },
+  { src: 'fotos/384f61df-73e9-423a-b270-7abfa354a140.jpg', caption: '' },
+  { src: 'fotos/61ccc31e-eb2b-4971-a37b-7b27299e8206.jpg', caption: '' },
+  { src: 'fotos/6ba4bc2e-86c9-4593-8d68-7313da1a3455.jpg', caption: '' },
+  { src: 'fotos/7c58b9cb-1551-4153-9475-76bd90d65e77.jpg', caption: '' },
+  { src: 'fotos/8b32e18f-e8cc-4b40-b664-46bc46209da3.jpg', caption: '' },
+  { src: 'fotos/90191c41-4d21-4ada-a791-46b98aff6563.jpg', caption: '' },
+  { src: 'fotos/a10ecb6c-c396-4421-935f-5732bbc156d7.jpg', caption: '' },
+  { src: 'fotos/b8759d17-d565-427e-9142-2a3222146bf9.jpg', caption: '' },
+  { src: 'fotos/d778335b-c772-4476-b896-3f5fc99e9a3c.jpg', caption: '' },
+  { src: 'fotos/d8a57051-96bd-4933-9f0f-350db0945d3c.jpg', caption: '' },
+  { src: 'fotos/f61c400a-d6a4-4cc8-8bd3-759c74cdd3c9.jpg', caption: '' },
 ];
 
 // ══════════════════════════════════════════════
