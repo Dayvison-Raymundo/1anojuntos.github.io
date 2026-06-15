@@ -279,6 +279,8 @@ function initReveal() {
   const els = document.querySelectorAll('.reveal');
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
+  }, { threshold: 0 });
   els.forEach(el => obs.observe(el));
+  // Fallback: garante visibilidade em browsers mobile que ignoram o observer
+  setTimeout(() => els.forEach(el => el.classList.add('visible')), 400);
 }
