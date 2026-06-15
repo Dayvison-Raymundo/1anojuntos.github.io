@@ -292,23 +292,23 @@ h1 span { color: var(--rose); font-family: 'Dancing Script', cursive; font-style
   letter-spacing: .05em; margin-bottom: 3rem;
 }
 
-/* Grid masonry-like via CSS columns */
+/* Grid de fotos */
 .mural {
-  column-count: 3;
-  column-gap: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-@media (max-width: 700px) { .mural { column-count: 2; } }
-@media (max-width: 420px) { .mural { column-count: 1; } }
+@media (max-width: 700px) { .mural { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .mural { grid-template-columns: 1fr; } }
 
 /* Cada card estilo Polaroid */
 .polaroid {
-  break-inside: avoid;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 1.2rem;
   background: #fdf6ec;
   border-radius: 3px;
   padding: 10px 10px 40px;
@@ -317,7 +317,6 @@ h1 span { color: var(--rose); font-family: 'Dancing Script', cursive; font-style
   transform-origin: center;
   transition: transform .3s, box-shadow .3s;
   position: relative;
-  /* rotação aleatória aplicada via JS */
 }
 .polaroid:hover {
   transform: scale(1.06) rotate(0deg) !important;
@@ -325,8 +324,10 @@ h1 span { color: var(--rose); font-family: 'Dancing Script', cursive; font-style
   z-index: 10;
 }
 .polaroid img {
-  width: 100%; display: block; border-radius: 2px;
-  aspect-ratio: auto;
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  aspect-ratio: 4/5;
   object-fit: cover;
   filter: sepia(.08) saturate(.95);
 }
